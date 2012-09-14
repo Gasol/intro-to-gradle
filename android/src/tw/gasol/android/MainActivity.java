@@ -1,9 +1,9 @@
 package tw.gasol.android;
 
-import android.app.Activity;
+import roboguice.activity.RoboActivity;
 import android.os.Bundle;
 
-public class MainActivity extends Activity {
+public class MainActivity extends RoboActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

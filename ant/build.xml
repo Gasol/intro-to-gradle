@@ -1,0 +1,9 @@
+<project>
+    <property name="gradleName" value="Gradle"/>
+    <target name="taskFromAnt">
+        <echo message="something!"/>
+    </target>
+    <target name="helloFromAnt">
+        <echo message="Hello Ant!"/>
+    </target>
+</project>

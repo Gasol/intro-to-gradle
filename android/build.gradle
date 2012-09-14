@@ -27,3 +27,9 @@ repositories {
 dependencies {
     compile 'org.roboguice:roboguice:2.0'
 }
+
+task listJars << {
+    configurations.compile.each {
+        println it.name
+    }
+}

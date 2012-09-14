@@ -1,0 +1,24 @@
+apply plugin: 'android'
+apply plugin: 'eclipse'
+
+buildscript {
+    repositories {
+        mavenLocal()
+    }
+
+    dependencies {
+        classpath 'org.gradle.api.plugins:gradle-android-plugin:1.2.0-SNAPSHOT'
+    }
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}

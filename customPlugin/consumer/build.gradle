@@ -1,0 +1,19 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url uri('../repo')
+        }
+    }
+    dependencies {
+        classpath 'tw.gasol.demo:ircPlugin:1.0-SNAPSHOT'
+        classpath 'pircbot:pircbot:1.5.0'
+    }
+}
+
+apply plugin: 'irc'
+apply plugin: 'java'
+
+irc {
+    name 'gradleBot'
+}
